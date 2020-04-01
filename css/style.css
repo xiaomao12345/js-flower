@@ -1,0 +1,725 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	vertical-align: top;
+}
+html,body{
+	width: 100%;
+	height: 100%;
+	/*background-color: red;*/
+}
+
+.page{
+	width: 100%;
+	height: auto;/*自动*/
+	padding-top: 48px;
+}
+
+/*头部样式*/
+.header{
+	width: 100%;
+	height: 48px;
+	background-color: #fff;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+}
+.header .header-in{
+	width: 1244px;
+    height: 100%;
+    /*background-color: red;*/
+    margin: 0 auto;
+}
+.header .header-in .header-left{
+	width: 435px;
+	height: 28px;
+	float: left;
+	margin-top: 10px;
+}
+.header .header-in .header-left li{
+	float: left;
+	margin-right: 20px;
+}
+.header .header-in .header-left li a{
+	text-decoration: none;
+	line-height: 28px;
+	text-align: center;
+	display: inline-block;
+	color: #444444;
+    font-size: 14px;
+}
+.header .header-in .header-left li a:hover{
+	color: #c90000;
+}
+.header .header-in .header-left li:nth-child(7) a{
+	font-size: 40px;
+	line-height: 2px;
+}
+.header .header-in .header-left .new{
+	width: 30px;
+	height: 14px;
+	color: #fff;
+	font-size: 12px;
+	background-color: #f4a523; 
+    display: inline-block;
+    margin-top: 6px;
+    margin-left: 2px;
+    line-height: 14px;
+}
+.header .header-in .header-left .logo-pic a{
+	width: 80px;
+    height: 28px;display: inline-block;
+    background: url("../images/huaban_logo.png") no-repeat;
+    background-size:cover;
+}
+.header .header-in .header-center{
+	width: 675px;
+    height: 34px;
+    background-color: #ccc;
+    float: left;
+    margin-top: 7px;
+}
+.header .header-in .header-center input{
+	width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    outline: none;
+    background-color: #fafafa;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    resize: none;
+}
+.header .header-in .header-right{
+    width: 116px;
+    height: 48px;
+    float: right;
+}
+
+.header .header-in .header-right a{
+    float: right;
+    width: 52px;
+    height: 32px;
+    line-height: 32px;
+    display: inline;
+    text-align: center;
+    text-decoration: none;
+    color: #383838;
+    border: 1px solid #d9d9d9;
+    margin-top: 7px;
+    font-size: 16px;
+    border-radius: 2px;
+}
+
+.header .header-in .header-right a:nth-child(1){
+     float: left;
+    background: linear-gradient(#E53E49, #D43636);
+    color: #fff;
+    border:1px solid #c90000;
+}
+
+.header .header-in .header-right a:nth-child(1):hover{
+    background-color: #E53E49;
+}
+
+/*轮播广告样式*/
+.slider-banner{
+	width: 100%;
+	height: 60px;
+	/*background-color: green;*/
+}
+.slider-banner ul{
+	width: 100%;
+	height: 60px;
+	position: relative;
+}
+.slider-banner ul li{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+    left: 0;
+    opacity: 1;
+}
+.slider-banner ul li a{
+	display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+.slider-banner ul li:nth-child(1) a{
+    background: url("../images/top_banner01.jpg") center center;
+}
+
+.slider-banner ul li:nth-child(2) a{
+    background: url("../images/top_banner02.jpg") center center;
+}
+
+.slider-banner ul li:nth-child(3) a{
+    background: url("../images/top_banner03.jpg") center center;
+}
+
+.slider-banner ul li:nth-child(4) a{
+    background: url("../images/top_banner04.jpg") center center;
+}
+
+.slider-banner ul li:nth-child(5) a{
+    background: url("../images/top_banner05.jpg") center center;
+}
+
+.slider-banner ul li:nth-child(1) a{
+    background: url("../images/top_banner01.jpg") center center;
+}
+
+.slider-banner ul li:nth-child(6) a{
+    background: url("../images/top_banner06.jpg") center center;
+}
+
+.slider-banner ul li:nth-child(7) a{
+    background: url("../images/top_banner07.jpg") center center;
+}
+
+/*快速登录*/
+.quick-login{
+	width: 100%;
+	height: 120px;
+	background: url("../images/login_header_blurbg.jpg") center center;
+}
+.quick-login .quick-login-in{
+	width: 1244px;
+	height: 100%;
+	/*background-color: red;*/
+	margin: 0 auto;
+	color: #fff;
+	font-size: 18px;
+	display: flex;
+	justify-content: space-between;
+}
+.quick-login .quick-login-in .intro{
+	display: flex; /*伸缩布局*/
+    flex-direction: column;/*让元素沿垂直主轴从上到下垂直排列*/
+    justify-content: center;/*元素在主轴（页面）上居中排列*/
+   /*align-items 元素在主轴（页面）当前行的横轴（纵轴）方向上的对齐方式*/
+}
+.quick-login .quick-login-in .intro .title{
+	font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.quick-login .quick-login-in .login_icon{
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}
+.quick-login .quick-login-in .login_icon li{
+	float: left;
+	margin-bottom: 5px;
+	margin-right: 15px;
+}
+.quick-login .quick-login-in .login_icon li a{
+	display: inline-block;
+	border-radius: 50%;
+	width: 54px;
+	height: 54px;
+}
+.quick-login .quick-login-in .login_icon li:nth-child(1) a{
+	background: url("../images/icon.jpg") 0 0;
+}
+.quick-login .quick-login-in .login_icon li:nth-child(2) a{
+	background: url("../images/icon.jpg") 60px 0;
+}
+.quick-login .quick-login-in .login_icon li:nth-child(3) a{
+	background: url("../images/icon.jpg") 140px 0;
+}
+.quick-login .quick-login-in .login_icon li:nth-child(4) a{
+	background: url("../images/icon.jpg") 220px 0;
+}
+.quick-login .quick-login-in .login_icon .tip_text{
+    position: relative;
+}
+.quick-login .quick-login-in .tip_text .line_left{
+	border-top: 1px solid #fff;
+	width: 35px;
+	position: absolute;
+	top: 10px;
+	left: -40px;
+}
+.quick-login .quick-login-in .tip_text .line_right{
+	border-top: 1px solid #fff;
+	width: 35px;
+	position: absolute;
+	top: 10px;
+	right: -40px;
+}
+
+/*吸顶效果*/
+.top-nav{
+	width:100%;
+	height: 70px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: rgba(0,0,0,.5);
+	z-index:999;
+	display:none
+}
+.top-nav .top-nav-in{
+	width: 1244px;
+	height: 70px;
+	margin: 0 auto;
+	color: #fff;
+}
+.top-nav .top-nav-in .left{
+	width: 350px;
+	height: 100%;
+	float: left;
+}
+.top-nav .top-nav-in .left p:nth-child(1) {
+	font-size: 24px;
+	font-weight: 700;
+	margin-top: 12px;
+}
+.top-nav .top-nav-in .right{
+	width: 350px;
+	height: 100%;
+	float: right;
+	/*margin-top: 14px;*/
+	padding-top: 15px;
+    box-sizing: border-box;
+}
+.top-nav .top-nav-in .right li{
+	float: left;
+	width: 42px;
+	height: 42px;
+	margin-left: 8px;
+}
+.top-nav .top-nav-in .right li a{
+	width: 42px;
+	height: 42px;
+	display: inline-block;
+}
+.top-nav .top-nav-in .right li:nth-child(1){
+	width: 140px;
+	height: 42px;
+	line-height: 42px;
+	font-size: 14px;
+	display: inline-block;
+}
+.top-nav .top-nav-in .right li:nth-child(2) a{
+	background: url("../images/icon2.png") 0 0;
+	background-size: cover;
+}
+.top-nav .top-nav-in .right li:nth-child(3) a{
+	background: url("../images/icon2.png") -42px 0;
+	background-size: cover;
+}
+.top-nav .top-nav-in .right li:nth-child(4) a{
+	background: url("../images/icon2.png") -84px 0;
+	background-size: cover;
+}
+.top-nav .top-nav-in .right li:nth-child(5) a{
+	background: url("../images/icon2.png") -126px 0;
+	background-size: cover;
+}
+
+/*类型标题*/
+.type-title{
+	width: 100%;
+	height: 130px;
+}
+.type-title .type-title-in{
+	width: 230px;
+	height: 130px;
+	margin: 0 auto;
+	/*background-color: red;*/
+	position: relative;
+	color: #666;
+	font-size: 30px;
+	text-align: center;
+	line-height: 130px;
+}
+.type-title .type-title-in .line-left ,.line-right{
+	position: absolute;
+	top: 65px;
+	width:48px;
+	border-top: 1px solid #666;
+	
+}
+.type-title .type-title-in .line-left{
+	left: 15px;
+}
+.type-title .type-title-in .line-right{
+	right: 15px;
+}
+
+/*选项卡*/
+.tab{
+	width: 100%;
+	height: auto;
+}
+.tab .tab-header{
+	width: 300px;
+	height: 48px;
+	margin: 0 auto;
+}
+.tab .tab-header ul li{
+	float: left;
+	width: 100px;
+	text-align: center;
+	line-height: 47px;
+	cursor: pointer;
+	font-size: 18px;
+}
+.tab .tab-header ul li.current{
+	color: orangered;
+	border-bottom: 1px solid orangered;
+}
+.tab .tab-content{
+	width: 100%;
+	background-color: #e8e8e8;
+}
+.tab .tab-content .dom:nth-child(1){
+	width: 100%;
+	/*background-color: red;*/
+}
+.tab .tab-content .dom:nth-child(2){
+	width: 100%;
+	background-color: blue;
+}
+.tab .tab-content .dom:nth-child(3){
+	width: 100%;
+	background-color: green;
+}
+.tab .tab-content .dom{
+	display: none;
+}
+
+.tab .tab-content .dom .dom-top{
+	width: 1244px;
+	margin: 0 auto;
+	padding: 16px;
+	height: 126px;
+}
+.tab .tab-content .dom .dom-top li{
+	width: 236px;
+	height: 126px;
+	border-radius: 4px;
+	margin-left: 16px;
+	/*background-color: red;*/
+	float: left;
+}
+.tab .tab-content .dom .dom-top li a{
+	display: inline-block;
+	width: 236px;
+    height: 126px;
+}
+.tab .tab-content .dom .dom-top li:nth-child(1) {
+	margin-left: 0;
+}
+.tab .tab-content .dom .dom-top li:nth-child(1) a{
+	background: url("../images/top01.png");
+}
+.tab .tab-content .dom .dom-top li:nth-child(2) a{
+	background: url("../images/top02.jpg");
+}
+.tab .tab-content .dom .dom-top li:nth-child(3) a{
+	background: url("../images/top03.jpg");
+}
+.tab .tab-content .dom .dom-top li:nth-child(4) a{
+	background: url("../images/top04.jpg");
+}
+.tab .tab-content .dom .dom-top li:nth-child(5) a{
+	background: url("../images/top05.jpg");
+}
+
+
+
+
+
+/*瀑布流*/
+.dom-pull{
+	width: 1244px;
+    position: relative;
+    margin: 0 auto; 
+    padding: 20px 0;
+    height: 800px;
+}
+.dom-pull .box{
+	width: 234px;
+	position: relative;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
+	border: 1px solid #ccc;
+	float: left;
+}
+.dom-pull .box .pic{
+	cursor: pointer;
+	position: relative;
+}
+.dom-pull .box .pic img{
+	width: 234px;
+}
+.dom-pull p{
+    line-height: 18px;
+    padding: 0 10px;
+    margin: 10px 0;
+    font-size: 12px;
+    word-wrap: break-word; /*自动换行*/
+}
+.dom-pull .box .pic .cover{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: rgba(255, 255, 255, 0.2);
+	display: none;
+}
+.dom-pull .box .btn-box{
+	position: absolute;
+	top: 6px;
+	left: 6px;
+	right: 6px;
+	z-index: 3;
+	background-color: red;
+}
+.dom-pull .box .btn-box .collect{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 30px;
+	line-height: 30px;
+	padding: 0 12px;
+	background-color: #E53E49;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+	font-size: 12px;
+}
+.dom-pull .box .btn-box .like{
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 30px;
+	width: 30px;
+	background-color: #fff;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.dom-pull .box .btn-box .like .heart{
+	width: 14px;
+	height: 14px;
+	background: url("../images/action_icons12.png")  -20px 0;
+	display: inline-block;
+}
+
+
+/*右下角样式*/
+.elevator-item{
+	position: fixed;
+    right: 15px;
+    bottom: 10px;
+    z-index: 1000;
+    opacity: 1;
+}
+.elevator-item .elevator{
+	width: 40px;
+	height: 36px;
+	background: url("../images/iconsprite_btbar.png") 8px 6px no-repeat;
+	display: inline-block;
+	background-color: #444;
+	background-color: rgba(0,0,0,.6);
+	border-radius: 4px;
+	margin-bottom: 4px;
+	display: none;
+}
+.elevator-item .elevator:hover{
+	background-color: rgba(0,0,0,.8);
+}
+
+
+.elevator-item .plus{
+	width: 40px;
+	height: 36px;
+	background: url("../images/iconsprite_btbar.png") 8px -34px no-repeat;
+	display: inline-block;
+	background-color: #444;
+	background-color: rgba(0,0,0,.6);
+	border-radius: 4px;
+}
+.elevator-item .plus:hover{
+	background-color: rgba(0,0,0,.8);
+}
+
+
+/*登录面板样式*/
+.mask{
+    position: fixed;
+    left: 0;
+    top:0;
+
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .5);
+    z-index: 9999;
+
+    display: none;
+}
+
+.mask .mask-center{
+    width: 520px;
+    height: 420px;
+    background-color: #fff;
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin-top: -160px;
+    margin-left: -260px;
+    border-radius: 5px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.mask .mask-center .center_box{
+    width: 286px;
+    margin: 20px auto 0;
+}
+
+.mask .mask-center .close-btn{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: url("../images/msg_close.png") 0 0;
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+}
+
+.mask .mask-center .logo-img{
+    display: block;
+    width: 106px;
+    margin: 0 auto;
+}
+
+.txtBox{
+    position: relative;
+    text-align: center;
+    margin:0 auto;
+    color:#999
+}
+.txtBox span:nth-child(1){
+    content: "";
+    border-top: 1px solid #ededed;
+    display: block;
+    position: absolute;
+    width: 50px;
+    top: 8px;
+    left: 0;
+}
+.txtBox span:nth-child(3){
+    content: "";
+    border-top: 1px solid #ededed;
+    display: block;
+    position: absolute;
+    width: 50px;
+    top: 8px;
+    right: 0;
+}
+.center_box .buttons{
+    margin: 15px 0 20px;
+    text-align: center;
+    /*font-size: 0;*/
+    letter-spacing: -999px;
+
+}
+.center_box .buttons a {
+    background-image: url('../images/login_icons_tiny.svg');
+    width: 48px;
+    height: 48px;
+    margin-right: 10px;
+    letter-spacing: 0;
+
+}
+
+.center_box .buttons a:nth-child(1){
+    display: inline-block;
+}
+.center_box .buttons a:nth-child(2){
+    display: inline-block;
+    background-position: -80px 0;
+}
+.center_box .buttons a:nth-child(3){
+    display: inline-block;
+    background-position: -160px 0;
+}
+.center_box .buttons a:nth-child(4){
+    display: inline-block;
+    background-position: -240px 0;
+}
+.center_box .buttons a:nth-child(5){
+    display: inline-block;
+    background-position: -320px 0;
+    margin-right: 0;
+
+}
+
+.center_box .mail-login {
+    margin-top: 15px;
+}
+
+.center_box .mail-login .clear-input {
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.clear-input {
+    display: inline-block;
+    padding: 0 10px;
+    height: 36px;
+    font-size: 16px;
+    line-height: 1;
+    color: #777;
+    background: #FCFCFC;
+    border: 1px solid #CCC;
+    border-radius: 3px;
+    width: 250px;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,.05);
+    -webkit-transition: color .2s linear,border-color .3s linear;
+}
+
+.btn18 {
+    font-size: 18px;
+    padding: 0 15px;
+    border-radius: 3px;
+    height: 36px;
+    line-height: 36px;
+}
+
+.rbtn {
+    display: block;
+    background: #E53E49;
+    background: linear-gradient( #E53E49, #D43636);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.08), 0 1px 0 rgba(255,255,255,.3);
+    text-shadow: 0 -1px 0 rgba(0,0,0,.1);
+    color: #fff;
+    border: 1px solid #C90000;
+    text-align: center;
+    text-decoration: none;
+}
+
+.switch-back {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.red-link {
+    color: #9A0000;
+}
+.center_box a {
+    cursor: pointer;
+}
